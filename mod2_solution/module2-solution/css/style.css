@@ -1,125 +1,104 @@
-/*basic style*/
-    * {
-        box-sizing: border-box;
-    }
+/* Basic style */
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: white;
-    }
+body {
+    background-color: white;
+}
 
-    h1 {
-       margin-bottom: 15px;
+/* Styles for the main heading */
+h1 {
+    margin-bottom: 15px;
     text-align: center;
-    color: #ff4532;
+    color: black; /* Changed from #ff4532 to black */
     font-size: 50px;
+}
+
+/* Styles for each section */
+section {
+    position: relative;
+    padding: 15px;
+    width: 90%;
+    margin: auto; /* Center the section */
+}
+
+/* Paragraph styles */
+p {
+    position: relative;
+    clear: right;
+}
+
+/* Styles for the div that wraps the content */
+div {
+    position: relative;
+    background-color: gray;
+    border: 3.5px solid black;
+    width: 100%;
+    margin: auto; /* Center the div */
+}
+
+/* Subsection styles */
+.sub1, .sub2, .sub3 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+/* Specific styles for subsections */
+.sub1 {
+    background-color: #FFB6C1; /* Light pink background for Chicken */
+}
+
+.sub2 {
+    background-color: #FF0000; /* Red background for Beef */
+    color: white; /* White text for Beef */
+}
+
+.sub3 {
+    background-color: #DFD479; /* Light yellow background for Sushi */
+    color: black; /* Black text for Sushi */
+}
+
+/* Styles for the content area */
+.content {
+    padding: 5px;
+    background-color: gray;
+    font-family: Helvetica;
+    color: black;
+    margin: 3px;
+    height: 150px;
+    overflow: auto;
+}
+
+/* Desktop version */
+@media (min-width: 992px) {
+    .column-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* Tablet version */
+@media (min-width: 768px) and (max-width: 991px) {
+    .column-md-6 {
+        float: left;
+        width: 50%;
     }
 
-    section {
-        position: relative;
-        padding: 15px;
-        width: 90%;
-    }
-
-    p {
-        position: relative;
-        clear: right;
-    }
-
-    div {
-        position: relative;
-        background-color: gray;
-        border: 3.5px solid black;
+    .column-md-12 {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
     }
+}
 
-    .sub1 {
-        float: right;
-        width: 100px;
-        padding: 5px;
-        margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: #FFB6C1;
-
+/* Mobile version */
+@media (max-width: 767px) {
+    .column-sm-12 {
+        width: 100%;
     }
-
-    .sub2 {
-        float: right;
-        color: white;
-        width: 100px;
-        padding: 5px;
-        margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: #FF0000;
-
-    }
-
-    .sub3 {
-        color: black;
-        float: right;
-        width: 100px;
-        padding: 5px;
-         margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: rgb(223, 212, 121);
-
-    }
-
-    .content {
-        padding: 5px;
-        border: none;
-        background-color: gray;
-        font-family: Helvetica;
-        color: black;
-        margin: 3px ;
-        height: 150px;
-        overflow: auto;
-    }
-
-    .row {
-        width: 90%;
-    }
-
-    /*desktop version*/
-    @media (min-width: 992px) {
-        .column-lg-4 {
-            float: left;
-            width: 33.33%;
-        }
-    }
-
-    /*tablet version*/
-    @media (min-width: 768px) and (max-width: 991px) {
-        .colmn-md-6 {
-            float: left;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .colmn-md-12 {
-            float: left;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    /*mobile version*/
-    @media (max-width: 767px) {
-        .colmn-sm-12 {
-            float: left;
-            width: 100%;
-        }
-    }
+}
