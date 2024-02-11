@@ -1,31 +1,24 @@
-/* Basic style reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/*basic style*/
+    * {
+        box-sizing: border-box;
+    }
 
-/* Base styles */
-body {
-    background-color: white;
-    font-family: Helvetica, Arial, sans-serif;
-}
+    body {
+        background-color: white;
+    }
 
-h1 {
-    margin-bottom: 15px;
+    h1 {
+       margin-bottom: 15px;
     text-align: center;
-    color: #ff4532; 
+    color: #ff4532;
     font-size: 50px;
-}
+    }
 
-/* Section styles */
-section {
-    position: relative;
-    padding: 15px;
-    width: 90%;
-    margin: auto; /* Center sections */
-    overflow: auto; /* Clear floats */
-}
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
 
     p {
         position: relative;
@@ -41,7 +34,8 @@ section {
         margin-right: auto;
         margin-bottom: auto;
     }
-.sub1 {
+
+    .sub1 {
         float: right;
         width: 100px;
         padding: 5px;
@@ -97,25 +91,38 @@ section {
         width: 90%;
     }
 
-/* Responsive Layout */
-@media (min-width: 992px) {
-    .column-lg-4 {
-        float: left;
-        width: 33.33%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .column-md-6 {
-        float: left;
-        width: 50%;
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
     }
 
-    .column-md-12 {
-        float: left;
-        width: 100%;
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-}
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
 
 @media (max-width: 767px) {
     .column-sm-12 {
