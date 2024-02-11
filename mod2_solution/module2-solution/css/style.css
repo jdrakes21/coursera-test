@@ -1,80 +1,95 @@
+/* Base styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* Container for sections */
+.box {
+  max-width: 700px;
+  margin: auto; /* Center the box */
 }
 
-.container {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-}
-
+/* Main heading */
 h1 {
   text-align: center;
-  margin: 30px 0;
-  font-size: 1.75em;
+  padding: 20px;
 }
 
-.menu-item {
-  background-color: #ddd; /* Replace with your chosen color */
-  border: 1px solid #000;
-  margin-bottom: 15px;
-  padding: 10px;
-  position: relative;
-}
-
-.menu-title {
-  background-color: #aaa; /* Replace with your chosen color */
-  border: 1px solid #000;
+/* Section title */
+h4 {
+  margin: 0;
   padding: 5px;
+  border: 1px solid black;
+  border-top: none;
   position: absolute;
-  right: 0;
   top: 0;
-  width: auto;
+  right: 0;
 }
 
+/* Paragraph text */
 p {
-  margin-top: 50px; /* Space for the title */
+  color: #4cae4c;
+  padding: 50px 17px 10px;
 }
 
-/* Responsive Grid */
-.col-lg-4, .col-md-6, .col-sm-12 {
-  float: left;
-  padding: 15px;
+/* Section backgrounds */
+.backgroud-1 {
+  background-color: #0081ff;
 }
 
+.backgroud-2 {
+  background-color: #00ff4b;
+}
+
+.backgroud-3 {
+  background-color: #ff0062;
+  color: #ffffff;
+}
+
+/* Section styling */
+.p-section {
+  height: 250px;
+  background-color: #3e2723;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Desktop styles */
 @media (min-width: 992px) {
-  .col-lg-4 {
-    width: 33.33333%;
+  .p-section {
+    /* Example: 3 sections in a row */
+    width: calc(33.333% - 20px); /* Adjusting for margin and padding */
+    float: left;
+    margin-right: 30px;
+  }
+  .p-section:last-child {
+    margin-right: 0; /* Remove margin for the last element */
   }
 }
 
+/* Tablet styles */
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6 {
-    width: 50%;
+  .p-section {
+    /* Example: 2 sections in a row */
+    width: calc(50% - 20px); /* Adjusting for margin and padding */
+    float: left;
+    margin-right: 30px;
   }
-  .col-md-12 {
-    width: 100%;
+  .p-section:nth-child(2n) {
+    margin-right: 0; /* Remove margin from every second element */
   }
 }
 
+/* Mobile styles */
 @media (max-width: 767px) {
-  .col-sm-12 {
+  .p-section {
+    /* Each section takes full width */
     width: 100%;
   }
 }
-
-/* Spacing and Typography Adjustments */
-.menu-item p {
-  padding: 15px;
-  font-size: 0.875em;
-}
-
-.menu-title {
   font-size: 1.25em;
 }
