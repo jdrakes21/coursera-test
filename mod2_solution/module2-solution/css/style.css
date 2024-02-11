@@ -16,7 +16,7 @@ h1 {
 }
 
 .menu-section {
-  background-color: #ddd; /* Grey background for each section */
+  background-color: #D3D3D3; /* Grey background for each section */
   border: 1px solid black;
   margin-bottom: 15px; /* Add some bottom margin to separate the sections */
   position: relative; /* For the absolute positioning of the title */
