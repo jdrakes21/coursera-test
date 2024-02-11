@@ -1,44 +1,58 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
+
+/* Assuming .box is a container for the sections, if it's not used, you can remove this */
 .box {
-    width: 700px
+    width: 700px;
+    margin: auto; /* Center the box */
 }
+
 h1 {
     text-align: center;
     padding: 20px;
 }
+
+/* Titles for each section */
 h4 {
-    margin: 0px;
+    margin: 0;
     padding: 5px;
     border: 1px solid black;
-    border-top: 0px;
+    border-top: none; /* Removed '0px' to use 'none' */
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
+
+/* Text within each section */
 p {
-    color: #4cae4c;
+    color: black; /* Changed color to black */
     padding: 50px 17px 10px 17px;
 }
-.backgroud-1 {
-    background-color: #0081ff;
+
+/* Background colors for the titles */
+/* Corrected class name spelling from 'backgroud' to 'background' */
+.background-1 {
+    background-color: #ffc0cb; /* Pink color for Chicken */
 }
-.backgroud-2 {
-    background-color: #00ff4b;
+
+.background-2 {
+    background-color: #ff0000; /* Red color for Beef */
 }
-.backgroud-3 {
-    background-color: #ff0062;
-    color: #ffffff;
+
+.background-3 {
+    background-color: #ffff99; /* Light yellow color for Sushi */
+    color: black; /* Changed text color to black for readability */
 }
+
+/* Section styling */
 .p-section {
     height: 250px;
-    background-color: #3e2723;
+    background-color: #ddd; /* Changed to grey background for the text sections */
     border: 1px solid black;
     margin-bottom: 30px;
     position: relative;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
