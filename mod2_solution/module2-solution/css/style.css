@@ -1,82 +1,76 @@
-/* Basic style */
+/* Basic style reset */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Base styles */
 body {
     background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Styles for the main heading */
 h1 {
     margin-bottom: 15px;
     text-align: center;
-    color: black; /* Changed from #ff4532 to black */
+    color: black; /* Changed the color to black */
     font-size: 50px;
 }
 
-/* Styles for each section */
+/* Section styles */
 section {
     position: relative;
     padding: 15px;
     width: 90%;
-    margin: auto; /* Center the section */
+    margin: auto; /* Center sections */
+    overflow: auto; /* Clear floats */
 }
 
-/* Paragraph styles */
-p {
-    position: relative;
-    clear: right;
-}
-
-/* Styles for the div that wraps the content */
+/* Box styles */
 div {
-    position: relative;
     background-color: gray;
     border: 3.5px solid black;
-    width: 100%;
-    margin: auto; /* Center the div */
+    margin-bottom: 20px; /* Consistent bottom margin for all boxes */
 }
 
-/* Subsection styles */
+/* Subtitle box styles */
 .sub1, .sub2, .sub3 {
-    float: right;
+    position: absolute;
+    top: -3.5px; /* Align with the top border of the box */
+    right: -3.5px; /* Align with the right border of the box */
     width: 100px;
     padding: 5px;
-    margin: -3px -3px 0px;
     border: 3.5px solid black;
     text-align: center;
     font-size: 125%;
     font-weight: bold;
 }
 
-/* Specific styles for subsections */
 .sub1 {
-    background-color: #FFB6C1; /* Light pink background for Chicken */
+    background-color: #FFB6C1; /* Light pink background */
 }
 
 .sub2 {
-    background-color: #FF0000; /* Red background for Beef */
-    color: white; /* White text for Beef */
+    background-color: #FF0000; /* Red background */
+    color: white; /* White text */
 }
 
 .sub3 {
-    background-color: #DFD479; /* Light yellow background for Sushi */
-    color: black; /* Black text for Sushi */
+    background-color: #FFFF99; /* Light yellow background */
 }
 
-/* Styles for the content area */
+/* Content styles */
 .content {
     padding: 5px;
     background-color: gray;
-    font-family: Helvetica;
-    color: black;
-    margin: 3px;
+    color: black; /* Ensure content text is black */
+    margin-top: 40px; /* Space for the subtitle box */
     height: 150px;
     overflow: auto;
 }
 
-/* Desktop version */
+/* Responsive Layout */
 @media (min-width: 992px) {
     .column-lg-4 {
         float: left;
@@ -84,7 +78,6 @@ div {
     }
 }
 
-/* Tablet version */
 @media (min-width: 768px) and (max-width: 991px) {
     .column-md-6 {
         float: left;
@@ -92,11 +85,11 @@ div {
     }
 
     .column-md-12 {
+        float: left;
         width: 100%;
     }
 }
 
-/* Mobile version */
 @media (max-width: 767px) {
     .column-sm-12 {
         width: 100%;
