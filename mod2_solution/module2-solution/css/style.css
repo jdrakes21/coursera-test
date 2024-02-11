@@ -14,7 +14,7 @@ body {
 h1 {
     margin-bottom: 15px;
     text-align: center;
-    color: black; /* Changed the color to black */
+    color: #ff4532; 
     font-size: 50px;
 }
 
@@ -27,48 +27,75 @@ section {
     overflow: auto; /* Clear floats */
 }
 
-/* Box styles */
-div {
-    background-color: gray;
-    border: 3.5px solid black;
-    margin-bottom: 20px; /* Consistent bottom margin for all boxes */
-}
+    p {
+        position: relative;
+        clear: right;
+    }
 
-/* Subtitle box styles */
-.sub1, .sub2, .sub3 {
-    position: absolute;
-    top: -3.5px; /* Align with the top border of the box */
-    right: -3.5px; /* Align with the right border of the box */
-    width: 100px;
-    padding: 5px;
-    border: 3.5px solid black;
-    text-align: center;
-    font-size: 125%;
-    font-weight: bold;
-}
-
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
 .sub1 {
-    background-color: #FFB6C1; /* Light pink background */
-}
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
 
-.sub2 {
-    background-color: #FF0000; /* Red background */
-    color: white; /* White text */
-}
+    }
 
-.sub3 {
-    background-color: #FFFF99; /* Light yellow background */
-}
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FF0000;
 
-/* Content styles */
-.content {
-    padding: 5px;
-    background-color: gray;
-    color: black; /* Ensure content text is black */
-    margin-top: 40px; /* Space for the subtitle box */
-    height: 150px;
-    overflow: auto;
-}
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
 
 /* Responsive Layout */
 @media (min-width: 992px) {
