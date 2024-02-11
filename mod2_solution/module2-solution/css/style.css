@@ -123,9 +123,3 @@
             width: 100%;
         }
     }
-
-@media (max-width: 767px) {
-    .column-sm-12 {
-        width: 100%;
-    }
-}
