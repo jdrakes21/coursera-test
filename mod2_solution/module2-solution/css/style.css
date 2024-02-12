@@ -42,7 +42,7 @@ p {
 .title-box {
     width: 100px;
     padding: 5px;
-    margin: -3px;
+    margin: -3px -3px 0px;
     border: 3.5px solid black;
     text-align: center;
     font-size: 125%;
