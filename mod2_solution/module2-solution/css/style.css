@@ -21,7 +21,7 @@ section {
     position: relative;
     padding: 15px;
     width: 90%;
-    margin: auto; /* Automatically center the section */
+    /*margin: auto;*/ /* Automatically center the section */
 }
 
 /* Paragraph styles */
