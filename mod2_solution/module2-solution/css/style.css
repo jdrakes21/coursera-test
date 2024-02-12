@@ -1,3 +1,4 @@
+/* Basic Style */
 * {
     box-sizing: border-box;
 }
@@ -5,91 +6,87 @@
 body {
     background-color: white;
     font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     margin-bottom: 15px;
     text-align: center;
-    color: black; /* Changed color to black */
+    color: black; /* Changed to black */
     font-size: 50px;
 }
 
-section {
-    position: relative;
-    padding: 15px;
+.row {
     width: 90%;
-    margin: auto; /* Center the sections */
-}
-
-p {
-    color: black; /* Ensure all text is black */
+    margin: 0 auto; /* Center align the row */
 }
 
 .menu-item {
+    position: relative;
     background-color: gray;
     border: 3.5px solid black;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Space between menu items */
+    padding: 15px;
+    overflow: hidden; /* Clear the float */
 }
 
-.title-box {
+.menu-title {
+    float: right;
+    width: 100px;
     padding: 5px;
-    position: absolute;
-    right: -3.5px; /* Align with the right border of the menu-item */
-    top: -3.5px; /* Align with the top border of the menu-item */
+    margin: 0;
     border: 3.5px solid black;
     text-align: center;
     font-size: 125%;
     font-weight: bold;
+    background-color: #FFB6C1; /* Default background for titles */
 }
 
-/* Specific styles for each title box */
-.chicken .title-box {
-    background-color: #FFB6C1; /* Light pink background for Chicken */
+/* Specific title colors */
+.menu-title.chicken {
+    background-color: #FFB6C1; /* Light pink */
 }
 
-.beef .title-box {
-    background-color: #FF0000; /* Red background for Beef */
-    color: white; /* White text for Beef */
+.menu-title.beef {
+    background-color: #FF0000; /* Red */
+    color: white; /* Text color */
 }
 
-.sushi .title-box {
-    background-color: #FFFF99; /* Light yellow background for Sushi */
+.menu-title.sushi {
+    background-color: #DFD479; /* Light yellow */
 }
 
 .content {
     padding: 5px;
-    background-color: gray;
-    color: black;
-    margin: 3px;
+    color: black; /* Text color */
     height: 150px;
     overflow: auto;
 }
 
-/* Responsive Layout */
+/* Desktop version */
 @media (min-width: 992px) {
     .column-lg-4 {
         float: left;
-        width: calc(33.333% - 30px); /* Adjusting for margin */
-        margin: 15px;
+        width: 33.33%;
     }
 }
 
+/* Tablet version */
 @media (min-width: 768px) and (max-width: 991px) {
     .column-md-6 {
         float: left;
-        width: calc(50% - 30px); /* Adjusting for margin */
-        margin: 15px;
+        width: 50%;
     }
 
     .column-md-12 {
         width: 100%;
-        margin: 15px 0;
     }
 }
 
+/* Mobile version */
 @media (max-width: 767px) {
     .column-sm-12 {
         width: 100%;
-        margin: 15px 0;
     }
 }
