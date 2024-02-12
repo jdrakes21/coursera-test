@@ -1,113 +1,125 @@
-/* Global styles */
-* {
-    box-sizing: border-box;
-}
+/*basic style*/
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    background-color: white;
-    font-family: Helvetica, Arial, sans-serif;
-}
+    body {
+        background-color: white;
+    }
 
-/* Header style */
-h1 {
-    margin-bottom: 15px;
+    h1 {
+       margin-bottom: 15px;
     text-align: center;
-    color: black; /* Changed to black as per your request */
+    color: #ff4532;
     font-size: 50px;
-}
-
-/* Section styles */
-section {
-    position: relative;
-    padding: 15px;
-    width: 90%;
-    /*margin: auto;*/ /* Automatically center the section */
-}
-
-/* Paragraph styles */
-p {
-    position: relative;
-    clear: right; /* Clear both sides for safety */
-}
-
-/* Common styles for all .menu-item containers */
-.menu-item {
-    background-color: gray;
-    border: 3.5px solid black;
-    margin-bottom: 20px; /* Set a consistent bottom margin */
-    overflow: auto; /* Clear the floats */
-}
-
-/* Title box styles */
-.title-box {
-    width: 100px;
-    padding: 5px;
-    margin: -3px -3px 0px;
-    border: 3.5px solid black;
-    text-align: center;
-    font-size: 125%;
-    font-weight: bold;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-/* Specific title box styles */
-.sub1 {
-    background-color: #FFB6C1; /* Light pink background */
-}
-
-.sub2 {
-    background-color: #FF0000; /* Red background */
-    color: white; /* White text */
-}
-
-.sub3 {
-    background-color: #DFD479; /* Light yellow background */
-}
-
-/* Content styles */
-.content {
-    padding: 5px;
-    background-color: gray;
-    color: black;
-    height: 150px;
-    overflow: auto;
-}
-
-/* Grid system */
-.row {
-    width: 90%;
-    margin: auto; /* Center the row */
-}
-
-/* Desktop layout */
-@media (min-width: 992px) {
-    .column-lg-4 {
-        float: left;
-        width: calc(33.33% - 30px); /* Adjust for margin and padding */
-        margin: 15px;
-    }
-}
-
-/* Tablet layout */
-@media (min-width: 768px) and (max-width: 991px) {
-    .column-md-6 {
-        float: left;
-        width: calc(50% - 30px); /* Adjust for margin and padding */
-        margin: 15px;
     }
 
-    .column-md-12 {
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
         width: 100%;
-        margin: 15px 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
     }
-}
 
-/* Mobile layout */
-@media (max-width: 767px) {
-    .column-sm-12 {
-        width: 100%;
-        margin: 15px 0;
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
+
     }
-}
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FF0000;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
