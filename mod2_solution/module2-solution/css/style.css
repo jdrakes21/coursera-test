@@ -27,7 +27,7 @@ section {
 /* Paragraph styles */
 p {
     position: relative;
-    clear: both; /* Clear both sides for safety */
+    clear: right; /* Clear both sides for safety */
 }
 
 /* Common styles for all .menu-item containers */
