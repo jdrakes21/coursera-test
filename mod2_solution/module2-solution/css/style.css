@@ -1,126 +1,91 @@
-style.css
-/*basic style*/
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: white;
-    }
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    h1 {
-       margin-bottom: 15px;
+h1 {
     text-align: center;
-    color: #ff4532;
-    font-size: 50px;
-    }
+    color: black; /* Text color for the header */
+    font-size: 2em; /* Adjusted font size */
+    margin: 0.5em 0; /* Adjusted margin for better spacing */
+}
 
+/* Section styles */
+section {
+    float: left; /* Float sections to get them side by side */
+    width: calc(33.33% - 10px); /* Adjust the width */
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 5px; /* Adjusted margin */
+}
+
+/* Title styles */
+.title-box {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Specific title box styles */
+.chicken .title-box {
+    background-color: #FFB6C1; /* Light pink background */
+}
+
+.beef .title-box {
+    background-color: #FF0000; /* Red background */
+    color: white; /* White text */
+}
+
+.sushi .title-box {
+    background-color: #FFFF99; /* Light yellow background */
+}
+
+/* Content styles */
+.content {
+    border: 3.5px solid black;
+    background-color: gray;
+    color: black;
+    height: 150px;
+    overflow: auto;
+    position: relative;
+    top: 30px; /* Space for the title */
+}
+
+/* Clearfix for the row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media queries */
+@media (min-width: 992px) {
+    /* Desktop styles */
     section {
-        position: relative;
-        padding: 15px;
-        width: 90%;
+        /* Desktop styles if any adjustments are needed */
     }
+}
 
-    p {
-        position: relative;
-        clear: right;
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet styles */
+    section {
+        /* Tablet styles if any adjustments are needed */
     }
+}
 
-    div {
-        position: relative;
-        background-color: gray;
-        border: 3.5px solid black;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
+@media (max-width: 767px) {
+    /* Mobile styles */
+    section {
+        float: none;
+        width: auto;
     }
-
-    .sub1 {
-        float: right;
-        width: 100px;
-        padding: 5px;
-        margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: #FFB6C1;
-
-    }
-
-    .sub2 {
-        float: right;
-        color: white;
-        width: 100px;
-        padding: 5px;
-        margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: #FF0000;
-
-    }
-
-    .sub3 {
-        color: black;
-        float: right;
-        width: 100px;
-        padding: 5px;
-         margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: rgb(223, 212, 121);
-
-    }
-
-    .content {
-        padding: 5px;
-        border: none;
-        background-color: gray;
-        font-family: Helvetica;
-        color: black;
-        margin: 3px ;
-        height: 150px;
-        overflow: auto;
-    }
-
-    .row {
-        width: 90%;
-    }
-
-    /*desktop version*/
-    @media (min-width: 992px) {
-        .column-lg-4 {
-            float: left;
-            width: 33.33%;
-        }
-    }
-
-    /*tablet version*/
-    @media (min-width: 768px) and (max-width: 991px) {
-        .colmn-md-6 {
-            float: left;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .colmn-md-12 {
-            float: left;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    /*mobile version*/
-    @media (max-width: 767px) {
-        .colmn-sm-12 {
-            float: left;
-            width: 100%;
-        }
-    }
+}
