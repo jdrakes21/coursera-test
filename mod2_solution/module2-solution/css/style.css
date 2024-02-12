@@ -1,125 +1,95 @@
-/*basic style*/
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: white;
-    }
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
 
-    h1 {
-       margin-bottom: 15px;
+h1 {
+    margin-bottom: 15px;
     text-align: center;
-    color: #ff4532;
+    color: black; /* Changed color to black */
     font-size: 50px;
+}
+
+section {
+    position: relative;
+    padding: 15px;
+    width: 90%;
+    margin: auto; /* Center the sections */
+}
+
+p {
+    color: black; /* Ensure all text is black */
+}
+
+.menu-item {
+    background-color: gray;
+    border: 3.5px solid black;
+    margin-bottom: 15px;
+}
+
+.title-box {
+    padding: 5px;
+    position: absolute;
+    right: -3.5px; /* Align with the right border of the menu-item */
+    top: -3.5px; /* Align with the top border of the menu-item */
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+/* Specific styles for each title box */
+.chicken .title-box {
+    background-color: #FFB6C1; /* Light pink background for Chicken */
+}
+
+.beef .title-box {
+    background-color: #FF0000; /* Red background for Beef */
+    color: white; /* White text for Beef */
+}
+
+.sushi .title-box {
+    background-color: #FFFF99; /* Light yellow background for Sushi */
+}
+
+.content {
+    padding: 5px;
+    background-color: gray;
+    color: black;
+    margin: 3px;
+    height: 150px;
+    overflow: auto;
+}
+
+/* Responsive Layout */
+@media (min-width: 992px) {
+    .column-lg-4 {
+        float: left;
+        width: calc(33.333% - 30px); /* Adjusting for margin */
+        margin: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .column-md-6 {
+        float: left;
+        width: calc(50% - 30px); /* Adjusting for margin */
+        margin: 15px;
     }
 
-    section {
-        position: relative;
-        padding: 15px;
-        width: 90%;
-    }
-
-    p {
-        position: relative;
-        clear: right;
-    }
-
-    div {
-        position: relative;
-        background-color: gray;
-        border: 3.5px solid black;
+    .column-md-12 {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
+        margin: 15px 0;
     }
+}
 
-    .sub1 {
-        float: right;
-        width: 100px;
-        padding: 5px;
-        margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: #FFB6C1;
-
+@media (max-width: 767px) {
+    .column-sm-12 {
+        width: 100%;
+        margin: 15px 0;
     }
-
-    .sub2 {
-        float: right;
-        color: white;
-        width: 100px;
-        padding: 5px;
-        margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: #FF0000;
-
-    }
-
-    .sub3 {
-        color: black;
-        float: right;
-        width: 100px;
-        padding: 5px;
-         margin: -3px -3px 0px;
-        border: 3.5px solid black;
-        text-align: center;
-        font-size: 125%;
-        font-weight: bold;
-        background-color: rgb(223, 212, 121);
-
-    }
-
-    .content {
-        padding: 5px;
-        border: none;
-        background-color: gray;
-        font-family: Helvetica;
-        color: black;
-        margin: 3px ;
-        height: 150px;
-        overflow: auto;
-    }
-
-    .row {
-        width: 90%;
-    }
-
-    /*desktop version*/
-    @media (min-width: 992px) {
-        .column-lg-4 {
-            float: left;
-            width: 33.33%;
-        }
-    }
-
-    /*tablet version*/
-    @media (min-width: 768px) and (max-width: 991px) {
-        .colmn-md-6 {
-            float: left;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .colmn-md-12 {
-            float: left;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    /*mobile version*/
-    @media (max-width: 767px) {
-        .colmn-sm-12 {
-            float: left;
-            width: 100%;
-        }
-    }
+}
