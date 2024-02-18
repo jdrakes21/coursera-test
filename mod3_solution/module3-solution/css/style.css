@@ -48,3 +48,10 @@ h2 {
     padding: 5px 10px; /* Add padding to the box */
     border-radius: 5px; /* Add rounded corners to the box */
 }
+
+#main-content {
+    background-color: grey;
+    padding: 20px; /* Add padding to create space between text and box edges */
+    border-radius: 5px; /* Add rounded corners to the box */
+    margin-top: 20px; /* Add margin to create space between navbar and box */
+}
