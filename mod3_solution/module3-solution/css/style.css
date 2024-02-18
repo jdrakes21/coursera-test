@@ -1,42 +1,50 @@
-*{
-	margin: 0;
-	padding: 0;
-	
-}
-.navbar{
-
-border: none;
-background-color: black;
-color: #61122F;
-}
-body{
-	background-color: #61122F;
-	color: white;
-}
-.glyphicon{
-	font-size: 30px;
-	color:#61122F; 
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.center{
-	width: 90%;
-	background-color: grey;
-
-}
-.container
-{
-	background-color: grey;
-}
-.text-center{
-	font-size: 30px;
+.navbar {
+    border: none;
+    background-color: black;
+    color: black; /* Change text color to black */
 }
 
-h2{
-	text-align: center;
+body {
+    background-color: #61122F;
+    color: black; /* Change text color to black */
 }
+
+.glyphicon {
+    font-size: 30px;
+    color: #61122F;
+}
+
+.center {
+    width: 90%;
+    background-color: grey;
+}
+
+.container {
+    background-color: grey;
+}
+
+.text-center {
+    font-size: 30px;
+    color: black; /* Change text color to black */
+}
+
+h2 {
+    text-align: center;
+    color: black; /* Change text color to black */
+}
+
 #myNavbar ul li a {
-	color: #61122F;
+    color: black; /* Change text color to black */
 }
-.navbar-brand{
-font-size: 30px;	
+
+.navbar-brand {
+    font-size: 30px;
+    background-color: grey; /* Surround "Food, LLC" with grey box */
+    padding: 5px 10px; /* Add padding to the box */
+    border-radius: 5px; /* Add rounded corners to the box */
 }
