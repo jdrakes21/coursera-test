@@ -44,14 +44,23 @@ h2 {
 
 .navbar-brand {
     font-size: 30px;
+    display: inline-block; /* Ensure the navbar brand is treated as a block element */
     background-color: grey; /* Surround "Food, LLC" with grey box */
     padding: 5px 10px; /* Add padding to the box */
     border-radius: 5px; /* Add rounded corners to the box */
 }
 
-#main-content {
-    background-color: grey;
-    padding: 20px; /* Add padding to create space between text and box edges */
+.navbar-brand a {
+    color: black; /* Change text color to black */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+#chickstory {
+    background-color: grey; /* Surround the long text with grey box */
+    padding: 20px; /* Add padding to the box */
     border-radius: 5px; /* Add rounded corners to the box */
-    margin-top: 20px; /* Add margin to create space between navbar and box */
+}
+
+.center h2 {
+    text-align: center; /* Center the "Chicken" title */
 }
