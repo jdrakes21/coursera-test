@@ -6,12 +6,12 @@
 .navbar {
     border: none;
     background-color: black;
-    color: black; /* Change text color to black */
+    color: black;
 }
 
 body {
     background-color: #61122F;
-    color: black; /* Change text color to black */
+    color: black;
 }
 
 .glyphicon {
@@ -19,48 +19,29 @@ body {
     color: #61122F;
 }
 
-.center {
-    width: 90%;
-    background-color: grey;
-}
-
-.container {
-    background-color: grey;
-}
-
-.text-center {
-    font-size: 30px;
-    color: black; /* Change text color to black */
-}
-
-h2 {
-    text-align: center;
-    color: black; /* Change text color to black */
-}
-
-#myNavbar ul li a {
-    color: black; /* Change text color to black */
-}
-
 .navbar-brand {
     font-size: 30px;
-    display: inline-block; /* Ensure the navbar brand is treated as a block element */
-    background-color: grey; /* Surround "Food, LLC" with grey box */
-    padding: 5px 10px; /* Add padding to the box */
-    border-radius: 5px; /* Add rounded corners to the box */
+    display: inline-block;
+    background-color: grey;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbar-brand a {
-    color: black; /* Change text color to black */
-    text-decoration: none; /* Remove underline from the link */
+    color: black;
+    text-decoration: none;
+}
+
+#myNavbar ul li a {
+    color: black;
 }
 
 #chickstory {
-    background-color: grey; /* Surround the long text with grey box */
-    padding: 20px; /* Add padding to the box */
-    border-radius: 5px; /* Add rounded corners to the box */
+    background-color: grey;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.center h2 {
-    text-align: center; /* Center the "Chicken" title */
+.text-center {
+    text-align: center;
 }
